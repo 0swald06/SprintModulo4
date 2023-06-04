@@ -39,9 +39,39 @@
                 android:fontFamily="monospace"
                 android:foregroundGravity="center_vertical"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Hola soy Oswaldo Alvarado este es un Sprint en Adnroid Studio para la clase"
-                android:textColor="#FFFFFF"
+                android:text="&#34;Hola soy Oswaldo Alvarado este es un Sprint en Android Studio para la clase&#34;" android:textColor="#FFFFFF"
                 android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/st_borde"
+                android:backgroundTint="#B3E3FB"
+                android:gravity="center"
+                android:text="Nombre:                                Oswaldo Alvarado" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/st_borde"
+                android:backgroundTint="#B3E3FB"
+                android:text="     Edad:                                                  29" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/st_borde"
+                android:backgroundTint="#B3E3FB"
+                android:gravity="center"
+                android:text="Correo:  oswaldoalvaradolopez@gmail.com" />
             <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">

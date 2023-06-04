@@ -27,24 +27,56 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="288dp"
-                android:layout_height="93dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
 
-                android:layout_marginTop="20dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:foregroundGravity="center_vertical"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Hola soy Oswaldo Alvarado este es un Sprint en Adnroid Studio para la clase"
+                android:text="&#34;Hola soy Oswaldo Alvarado este es un Sprint en Android Studio para la clase&#34;"
                 android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/st_borde"
+                android:backgroundTint="#B3E3FB"
+                android:gravity="center"
+                android:text="Nombre:                                Oswaldo Alvarado" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/st_borde"
+                android:backgroundTint="#B3E3FB"
+                android:text="     Edad:                                                  29" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/st_borde"
+                android:backgroundTint="#B3E3FB"
+                android:gravity="center"
+                android:text="Correo:  oswaldoalvaradolopez@gmail.com" />
+
 
             <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="200dp">
+                android:layout_marginTop="100dp">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_action_button"
+                    android:id="@+id/pasarBtn"
                     style="?attr/floatingActionButtonSmallStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
