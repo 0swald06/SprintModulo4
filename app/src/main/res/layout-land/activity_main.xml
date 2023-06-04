@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="271dp">
+
+                <ImageView
+                    android:id="@+id/imagen1"
+                    android:layout_height="600dp"
+                    android:layout_width="900dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+
+                android:layout_marginTop="20dp"
+                android:fontFamily="monospace"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Hola soy Oswaldo Alvarado este es un Sprint en Adnroid Studio para la clase"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floating_action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/baseline_add_24"
+                    style="?attr/floatingActionButtonSmallStyle"/>
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
