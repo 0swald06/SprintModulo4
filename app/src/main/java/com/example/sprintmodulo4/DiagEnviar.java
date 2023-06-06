@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
 
-
+// trabaje con un dialogFrament
 public class DiagEnviar extends DialogFragment{
 
     Button enviarBtn ;
@@ -52,7 +53,7 @@ public class DiagEnviar extends DialogFragment{
         enviarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Log.d("Prueba", "Prueba de funcionamiento del intent en la DialogFragment ");
                 if(mensaje.length()==0){
                     Toast.makeText(getContext(),"Debe ingresar un mensaje",Toast.LENGTH_SHORT).show();
                 } else if (mensaje.length()>50) {

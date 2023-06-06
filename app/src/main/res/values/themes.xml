@@ -6,4 +6,16 @@
     </style>
 
     <style name="Theme.SprintModulo4" parent="Base.Theme.SprintModulo4" />
+
+
+    <style name="TemaActivity2" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#AE7D7D</item>
+    </style>
+
+    <style name="TemaDialogo" parent="Theme.AppCompat.Dialog.Alert">
+
+        <item name="colorPrimary">#231313</item>
+    </style>
+
 </resources>

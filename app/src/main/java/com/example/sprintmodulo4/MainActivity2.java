@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,7 +24,8 @@ import java.net.URI;
 public class MainActivity2 extends AppCompatActivity {
     private ActivityMain2Binding mBinding;
     Context context;
-    String url="https://github.com/0swald06?tab=repositories";
+    String url1="https://www.linkedin.com/feed/";
+    String url2="https://github.com/0swald06?tab=repositories";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +37,24 @@ public class MainActivity2 extends AppCompatActivity {
         mBinding.linkBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-            Uri link = Uri.parse(url);
+//Implementacion de un iten implicito que manda a una URL
+            Uri link = Uri.parse(url1);
             Intent i= new Intent(Intent.ACTION_VIEW,link);
+                Log.d("Prueba", "Prueba de funcionamiento del intent en la activity segundaria ");
             startActivity(i);
             }
         });
+
+        mBinding.whsBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+//Implementacion de un iten implicito que manda a una URL
+                Uri link = Uri.parse(url2);
+                Intent i= new Intent(Intent.ACTION_VIEW,link);
+                startActivity(i);
+            }
+        });
+
         mBinding.Contactar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
